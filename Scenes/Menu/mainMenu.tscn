@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://c18pthrho5b6c"]
+
+[ext_resource type="Script" uid="uid://d3f00l4jj4y7g" path="res://Scripts/Menu/mainMenu.gd" id="1_86uyx"]
+
+[node name="MainMenu" type="NinePatchRect" unique_id=1186072308]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_86uyx")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1134014386]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3940972
+anchor_top = 0.375
+anchor_right = 0.6067708
+anchor_bottom = 0.45833334
+grow_horizontal = 2
+grow_vertical = 2
+text = "OverWorld Test"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="." unique_id=749723755]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3967014
+anchor_top = 0.49382716
+anchor_right = 0.6032986
+anchor_bottom = 0.58487654
+grow_horizontal = 2
+grow_vertical = 2
+text = "Battle Test"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
