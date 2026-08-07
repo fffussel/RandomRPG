@@ -1,0 +1,22 @@
+[gd_scene format=4 uid="uid://c6yqceiam3b4q"]
+
+[ext_resource type="Texture2D" uid="uid://55hlrkuedl6e" path="res://AssetEX/Sprites/Test/16x16_test.png" id="1_t1gg8"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t1gg8"]
+texture = ExtResource("1_t1gg8")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_njsof"]
+sources/0 = SubResource("TileSetAtlasSource_t1gg8")
+
+[node name="World" type="Node2D" unique_id=376938249]
+
+[node name="16x16Test" type="Sprite2D" parent="." unique_id=168379717]
+position = Vector2(635.00006, 343)
+scale = Vector2(5, 5)
+texture = ExtResource("1_t1gg8")
+
+[node name="TileMap" type="TileMapLayer" parent="." unique_id=1948072550]
+scale = Vector2(5, 5)
+tile_map_data = PackedByteArray("AAAKAAQAAAAAAAAAAAALAAQAAAAAAAAAAAAMAAQAAAAAAAAAAAAKAAMAAAAAAAAAAAALAAMAAAAAAAAAAAAMAAMAAAAAAAAAAAAEAAQAAAAAAAAAAAADAAQAAAAAAAAAAAACAAQAAAAAAAAAAAACAAMAAAAAAAAAAAADAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAAEAAYAAAAAAAAAAAAEAAcAAAAAAAAAAAAJAAYAAAAAAAAAAAAJAAcAAAAAAAAAAAAFAAEAAAAAAAAAAAAGAAAAAAAAAAAAAAAJAAEAAAAAAAAAAAAIAAAAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_njsof")

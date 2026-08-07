@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b5at8brhrbwwf"]
+
+[ext_resource type="Texture2D" uid="uid://bg1scm2y1bc5p" path="res://AssetEX/Sprites/Test/32x32_test.png" id="1_c8wje"]
+
+[node name="Battle" type="Node2D" unique_id=58684596]
+
+[node name="32x32Test" type="Sprite2D" parent="." unique_id=1542202656]
+position = Vector2(278, 526)
+scale = Vector2(4, 4)
+texture = ExtResource("1_c8wje")
+
+[node name="32x32Test2" type="Sprite2D" parent="." unique_id=1823860937]
+position = Vector2(523, 523.00006)
+scale = Vector2(4, 4)
+texture = ExtResource("1_c8wje")
+
+[node name="32x32Test3" type="Sprite2D" parent="." unique_id=2134670006]
+position = Vector2(750, 523)
+scale = Vector2(4, 4)
+texture = ExtResource("1_c8wje")
+
+[node name="32x32Test4" type="Sprite2D" parent="." unique_id=499226779]
+position = Vector2(989, 526)
+scale = Vector2(4, 4)
+texture = ExtResource("1_c8wje")
+
+[node name="32x32Test5" type="Sprite2D" parent="." unique_id=447848948]
+position = Vector2(626, 199.00009)
+scale = Vector2(5, 5)
+texture = ExtResource("1_c8wje")
