@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://c6yqceiam3b4q"]
 
 [ext_resource type="Texture2D" uid="uid://55hlrkuedl6e" path="res://AssetEX/Sprites/Test/16x16_test.png" id="1_t1gg8"]
+[ext_resource type="PackedScene" uid="uid://c58155vfx0uwj" path="res://Scenes/World/Player/player.tscn" id="2_yp2ti"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t1gg8"]
 texture = ExtResource("1_t1gg8")
@@ -20,3 +21,7 @@ texture = ExtResource("1_t1gg8")
 scale = Vector2(5, 5)
 tile_map_data = PackedByteArray("AAAKAAQAAAAAAAAAAAALAAQAAAAAAAAAAAAMAAQAAAAAAAAAAAAKAAMAAAAAAAAAAAALAAMAAAAAAAAAAAAMAAMAAAAAAAAAAAAEAAQAAAAAAAAAAAADAAQAAAAAAAAAAAACAAQAAAAAAAAAAAACAAMAAAAAAAAAAAADAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAAEAAYAAAAAAAAAAAAEAAcAAAAAAAAAAAAJAAYAAAAAAAAAAAAJAAcAAAAAAAAAAAAFAAEAAAAAAAAAAAAGAAAAAAAAAAAAAAAJAAEAAAAAAAAAAAAIAAAAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_njsof")
+
+[node name="Player" parent="." unique_id=1753926807 instance=ExtResource("2_yp2ti")]
+position = Vector2(528, 441)
+scale = Vector2(5, 5)
