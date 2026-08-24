@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://m86mixxeo5ub" path="res://Scripts/World/Player/player.gd" id="1_nko6g"]
 [ext_resource type="Texture2D" uid="uid://rt8cae5cuxdd" path="res://AssetEX/Sprites/16x16/char/main/main_char.png" id="2_nko6g"]
+[ext_resource type="Resource" uid="uid://cmo30d0i2w1m3" path="res://Resources/Player/Stats/statsResource.tres" id="2_xial5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ju4de"]
 atlas = ExtResource("2_nko6g")
@@ -159,6 +160,7 @@ size = Vector2(16, 16)
 
 [node name="Player" type="CharacterBody2D" unique_id=1753926807]
 script = ExtResource("1_nko6g")
+stats = ExtResource("2_xial5")
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="." unique_id=1027311598]
 sprite_frames = SubResource("SpriteFrames_giktf")
