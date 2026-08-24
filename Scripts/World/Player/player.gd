@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var playerSprite: AnimatedSprite2D = $PlayerSprite
 
-const SPEED = 125
+const STATS = preload("res://Resources/Player/stats.tres")
 
 var animDir: int = 0
 var animWalk: bool = false
@@ -13,7 +13,7 @@ func _physics_process(delta: float) -> void:
 	var  directionNS := Input.get_axis("worldSceneWalkNorth", "worldSceneWalkSouth")
 	
 	if directionWE:
-		velocity.x = directionWE * SPEED
+		velocity.x = directionWE * STATS.get("metadata/Speed")
 		animWalk = true
 		if directionWE > 0:
 			animDir = 3
@@ -23,7 +23,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = 0
 	
 	if directionNS:
-		velocity.y = directionNS * SPEED
+		velocity.y = directionNS * STATS.get("metadata/Speed")
 		animWalk = true
 		if directionNS > 0:
 			animDir = 0

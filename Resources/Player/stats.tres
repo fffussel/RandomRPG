@@ -1,0 +1,10 @@
+[gd_resource type="Resource" format=3 uid="uid://bmj6itaaefw1p"]
+
+[resource]
+metadata/Name = "test"
+metadata/Speed = 125.0
+metadata/Strength = 0.0
+metadata/Luck = 0.0
+metadata/Accuracy = 0.0
+metadata/CritChance = 0.0
+metadata/CritMult = 0.0
