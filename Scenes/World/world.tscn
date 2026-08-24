@@ -1,6 +1,5 @@
 [gd_scene format=4 uid="uid://c6yqceiam3b4q"]
 
-[ext_resource type="Script" uid="uid://ctskoxah4gsxf" path="res://Scenes/World/test.gd" id="1_3rhlx"]
 [ext_resource type="Texture2D" uid="uid://55hlrkuedl6e" path="res://AssetEX/Sprites/Test/16x16_test.png" id="1_t1gg8"]
 [ext_resource type="PackedScene" uid="uid://c58155vfx0uwj" path="res://Scenes/World/Player/player.tscn" id="2_yp2ti"]
 
@@ -12,7 +11,6 @@ texture = ExtResource("1_t1gg8")
 sources/0 = SubResource("TileSetAtlasSource_t1gg8")
 
 [node name="World" type="Node2D" unique_id=376938249]
-script = ExtResource("1_3rhlx")
 
 [node name="16x16Test" type="Sprite2D" parent="." unique_id=168379717]
 position = Vector2(635.00006, 343)
