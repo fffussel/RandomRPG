@@ -2,7 +2,7 @@ class_name PlayerStats
 extends Resource
 
 @export var name: String
-@export var speed: float
+@export var speed: float = 125
 @export var strength: float
 @export var luck: float
 @export var accuracy: float

@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var playerSprite: AnimatedSprite2D = $PlayerSprite
 
-const STATS = preload("res://Resources/Player/Stats/statsResource.tres")
+var STATS = preload("res://Resources/Player/Stats/statsResource.tres")
 
 var animDir: int = 0
 var animWalk: bool = false
@@ -41,6 +41,7 @@ func _process(delta: float) -> void:
 	animProcess()
 
 func animProcess():
+	STATS.accuracy += 1
 	var animName
 	if animWalk:
 		animName = "walk_"
