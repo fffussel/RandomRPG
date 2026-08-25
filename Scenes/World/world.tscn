@@ -25,3 +25,5 @@ tile_set = SubResource("TileSet_njsof")
 [node name="Player" parent="." unique_id=1753926807 instance=ExtResource("2_yp2ti")]
 position = Vector2(528, 441)
 scale = Vector2(5, 5)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=147645580]
