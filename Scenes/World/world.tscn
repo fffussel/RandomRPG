@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://55hlrkuedl6e" path="res://AssetEX/Sprites/Test/16x16_test.png" id="1_t1gg8"]
 [ext_resource type="PackedScene" uid="uid://c58155vfx0uwj" path="res://Scenes/World/Player/player.tscn" id="2_yp2ti"]
+[ext_resource type="PackedScene" uid="uid://7g23l2o3m7oc" path="res://Scenes/World/Interactables/Chests/Solid/WoodenChest.tscn" id="3_3rhlx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t1gg8"]
 texture = ExtResource("1_t1gg8")
@@ -27,3 +28,7 @@ position = Vector2(528, 441)
 scale = Vector2(5, 5)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=147645580]
+
+[node name="WoodenChest" parent="." unique_id=2136050944 instance=ExtResource("3_3rhlx")]
+position = Vector2(493.99997, 294.99997)
+scale = Vector2(5, 5)

@@ -1,3 +1,4 @@
+class_name ChestResource
 extends Resource
 
 @export var name: String

@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://7g23l2o3m7oc"]
+
+[ext_resource type="Script" uid="uid://xn6y5hl0i55m" path="res://Scripts/World/Interactables/Chests/Solid/wooden_chest.gd" id="1_3whu4"]
+[ext_resource type="Script" uid="uid://duh0uh8x840v0" path="res://Resources/Objects/Interactables/Chest/chestResourceScript.gd" id="2_ipe67"]
+[ext_resource type="Texture2D" uid="uid://dklikcdo4j8r1" path="res://AssetEX/Sprites/16x16/interactables/chest/chest_wood.png" id="3_tp4ml"]
+[ext_resource type="Texture2D" uid="uid://55hlrkuedl6e" path="res://AssetEX/Sprites/Test/16x16_test.png" id="4_tp4ml"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_subx6"]
+atlas = ExtResource("3_tp4ml")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4k66q"]
+atlas = ExtResource("3_tp4ml")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pmj4x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_subx6")
+}],
+"loop": 1,
+"name": &"chest_closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4k66q")
+}],
+"loop": 1,
+"name": &"chest_open",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_subx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4k66q")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Resource" id="Resource_3whu4"]
+script = ExtResource("2_ipe67")
+name = "WoodenChest"
+sprite = SubResource("SpriteFrames_pmj4x")
+metadata/_custom_type_script = "uid://duh0uh8x840v0"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3rhlx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_tp4ml")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="WoodenChest" type="Node2D" unique_id=2136050944]
+script = ExtResource("1_3whu4")
+res = SubResource("Resource_3whu4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=583492843]
+sprite_frames = SubResource("SpriteFrames_3rhlx")

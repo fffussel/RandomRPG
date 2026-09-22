@@ -1,0 +1,7 @@
+[gd_resource type="Resource" format=3 uid="uid://bhv2h7pcasbxu"]
+
+[ext_resource type="Script" uid="uid://duh0uh8x840v0" path="res://Resources/Objects/Interactables/Chest/chestResourceScript.gd" id="1_eeh83"]
+
+[resource]
+script = ExtResource("1_eeh83")
+name = "WoodChesr"
